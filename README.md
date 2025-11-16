@@ -3,10 +3,10 @@
 **A high-performance TypeScript library for tabular data manipulation with a custom TOON format**
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
-[![Tests](https://img.shields.io/badge/tests-75%20passing-brightgreen.svg)](https://github.com/cescofors75/toonjs)
+[![Tests](https://img.shields.io/badge/tests-102%20passing-brightgreen.svg)](https://github.com/cescofors75/toonjs)
 [![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)](https://github.com/cescofors75/toonjs)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Performance](https://img.shields.io/badge/performance-+99%25-orange.svg)](https://github.com/cescofors75/toonjs/blob/main/PERFORMANCE.md)
+[![Performance](https://img.shields.io/badge/performance-2.2x%20avg-orange.svg)](https://github.com/cescofors75/toonjs/blob/main/PERFORMANCE.md)
 
 > 📚 **[Complete Documentation, Interactive Playground & Tools → toonjs.dev](https://toonjs.dev)**
 
@@ -18,17 +18,17 @@
 
 ### 📖 Overview
 
-ToonJS is a powerful, zero-dependency TypeScript library for working with tabular data. It introduces the TOON format - a human-readable, efficient way to represent datasets - and provides 64+ optimized methods for data manipulation, analysis, and transformation.
+ToonJS is a powerful, zero-dependency TypeScript library for working with tabular data. It introduces the TOON format - a human-readable, efficient way to represent datasets - and provides 76+ optimized methods for data manipulation, analysis, and transformation.
 
 ### ✨ Key Features
 
-- **🚀 High Performance**: Up to 3.5x faster than manual operations (optimized with DOOM-style techniques)
+- **🚀 High Performance**: Promedio 2.2x más rápido que operaciones manuales, hasta 3.5x en operaciones como correlación y normalización (optimizado con técnicas estilo DOOM)
 - **📦 Zero Dependencies**: Pure TypeScript, no external packages
 - **🎯 Type-Safe**: Full TypeScript support with comprehensive type definitions
 - **🔗 Chainable API**: Fluent interface for elegant data pipelines
-- **📊 Rich Functionality**: 64+ methods covering filtering, aggregation, statistics, and more
+- **📊 Rich Functionality**: 76+ methods covering filtering, aggregation, statistics, and more
 - **🎨 Custom Format**: TOON format - compact and human-readable
-- **✅ Well-Tested**: 77 comprehensive tests with 100% coverage
+- **✅ Well-Tested**: 102 comprehensive tests with 100% coverage
 - **🌐 Universal**: Works in Node.js and browsers
 
 ### 🚀 Quick Start
@@ -234,11 +234,11 @@ const stats = data.stats('revenue');
 
 ToonJS is optimized for high performance:
 
-- **Normalization**: 1.68x faster than manual code
-- **Correlation**: 3.51x faster
-- **Ranking**: 3.23x faster
-- **Rolling Average**: 1.25x faster
-- **Overall**: 75.5% average improvement
+- **Correlación**: 3.5x más rápido
+- **Normalización**: 3.5x más rápido  
+- **Ranking**: 3.23x más rápido
+- **Rolling Average**: 1.25x más rápido
+- **Overall**: Promedio 2.2x más rápido en benchmarks verificables
 
 See [PERFORMANCE.md](docs/PERFORMANCE.md) for detailed benchmarks.
 
@@ -249,7 +249,7 @@ npm test              # Run all tests
 npm run build         # Build TypeScript
 ```
 
-All 77 tests passing with 100% coverage.
+All 102 tests passing with 100% coverage.
 
 ### 📄 License
 
@@ -281,13 +281,13 @@ ToonJS es una poderosa biblioteca TypeScript sin dependencias para trabajar con 
 
 ### ✨ Características Principales
 
-- **🚀 Alto Rendimiento**: Hasta 3.5x más rápido que operaciones manuales (optimizado con técnicas estilo DOOM)
+- **🚀 Alto Rendimiento**: Promedio 2.2x más rápido que operaciones manuales, hasta 3.5x en operaciones como correlación y normalización (optimizado con técnicas estilo DOOM)
 - **📦 Sin Dependencias**: TypeScript puro, sin paquetes externos
 - **🎯 Type-Safe**: Soporte completo de TypeScript con definiciones exhaustivas
 - **🔗 API Encadenable**: Interfaz fluida para pipelines elegantes
-- **📊 Funcionalidad Rica**: Más de 60 métodos cubriendo filtrado, agregación, estadísticas y más
+- **📊 Funcionalidad Rica**: Más de 76 métodos cubriendo filtrado, agregación, estadísticas y más
 - **🎨 Formato Personalizado**: Formato TOON - compacto y legible
-- **✅ Bien Probado**: 77 tests exhaustivos con 100% de cobertura
+- **✅ Bien Probado**: 102 tests exhaustivos con 100% de cobertura
 - **🌐 Universal**: Funciona en Node.js y navegadores
 
 ### 🚀 Inicio Rápido
@@ -360,11 +360,11 @@ const estadisticas = data.stats('ingresos');
 
 ToonJS está optimizado para alto rendimiento:
 
-- **Normalización**: 1.68x más rápido que código manual
-- **Correlación**: 3.51x más rápido
+- **Correlación**: 3.5x más rápido
+- **Normalización**: 3.5x más rápido
 - **Ranking**: 3.23x más rápido
 - **Media Móvil**: 1.25x más rápido
-- **General**: 75.5% de mejora promedio
+- **General**: Promedio 2.2x más rápido en benchmarks verificables
 
 Ver [PERFORMANCE.md](docs/PERFORMANCE.md) para benchmarks detallados.
 
@@ -375,7 +375,7 @@ npm test              # Ejecutar todos los tests
 npm run build         # Compilar TypeScript
 ```
 
-Los 77 tests pasan con 100% de cobertura.
+Los 102 tests pasan con 100% de cobertura.
 
 ### 📄 Licencia
 
