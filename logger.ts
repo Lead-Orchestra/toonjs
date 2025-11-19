@@ -5,14 +5,25 @@ import pino from 'pino';
  * 
  * Usage:
  *   Production: Set NODE_ENV=production for JSON output
- *   Development: Clean console format (better Windows compatibility than console.log)
+ *   Development: Colored output with proper UTF-8 encoding
  * 
  * Performance: ~5x faster than console.log in production
  */
+
+// Configure Windows console for UTF-8 if on Windows
+if (process.platform === 'win32' && process.stdout.isTTY) {
+  try {
+    // Set UTF-8 encoding for proper emoji/unicode display
+    process.stdout.setEncoding('utf8');
+  } catch (e) {
+    // Silently fail if encoding cannot be set
+  }
+}
+
 export const logger = pino({
   level: process.env.LOG_LEVEL || 'info',
   // In production, use fast binary serialization
-  // In development, use simple formatting
+  // In development, use colorized pretty printing
   ...(process.env.NODE_ENV === 'production' 
     ? {
         // Fast structured logging for production
@@ -21,14 +32,15 @@ export const logger = pino({
         },
       }
     : {
-        // Development: simple timestamp + message
+        // Development: colorized pretty output with UTF-8 support
         transport: {
           target: 'pino-pretty',
           options: {
-            colorize: false,
+            colorize: true,
             translateTime: 'HH:MM:ss',
             ignore: 'pid,hostname',
-            singleLine: true,
+            singleLine: false,
+            messageFormat: '{msg}',
           },
         },
       }),
