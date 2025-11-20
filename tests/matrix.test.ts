@@ -29,6 +29,12 @@ describe('Operaciones Matriciales - Escalares', () => {
     expect(result.first()?.x).toBe(3);
     expect(result.first()?.y).toBe(5);
   });
+
+  test('multiplyScalar() multiplica por escalar', () => {
+    const result = toon.multiplyScalar(2, ['x', 'y']);
+    expect(result.first()?.x).toBe(4);
+    expect(result.first()?.y).toBe(8);
+  });
 });
 
 describe('Operaciones Matriciales - Álgebra Lineal', () => {
@@ -100,6 +106,14 @@ describe('Operaciones Matriciales - Estadísticas', () => {
 });
 
 describe('Operaciones Matriciales - Transformaciones', () => {
+  test('transpose() transpone filas y columnas', () => {
+    const toon = ToonFactory.from(`d[2]{a,b}:\n  1,2\n  3,4`);
+    const transposed = toon.transpose();
+    expect(transposed.count()).toBe(2);
+    expect(transposed.first()?.row_0).toBe(1);
+    expect(transposed.first()?.row_1).toBe(3);
+  });
+
   test('applyFunction() aplica función', () => {
     const toon = ToonFactory.from(`d[3]{x}:\n  1\n  2\n  3`);
     const squared = toon.applyFunction(x => x * x, ['x']);
