@@ -1,5 +1,5 @@
-import { Toon } from './toon';
-import { ToonFactory } from './factory';
+import { Toon } from '../toon';
+import { ToonFactory } from '../factory';
 
 describe('Nuevas Funcionalidades - Acceso a Datos', () => {
   let toon: Toon;

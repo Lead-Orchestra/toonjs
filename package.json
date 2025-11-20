@@ -16,12 +16,7 @@
     "test:coverage": "jest --coverage",
     "prepublishOnly": "npm run build && npm run test",
     "lint": "eslint src/**/*.ts",
-    "format": "prettier --write src/**/*.ts",
-    "analyze": "node analisis-empresarial.js",
-    "analyze:utf8": "powershell -ExecutionPolicy Bypass -File run-analysis.ps1",
-    "analyze:console": "node analisis-empresarial-console.js",
-    "benchmark:logging": "node benchmark-logging.js",
-    "benchmark:logging:prod": "node benchmark-logging-production.js"
+    "format": "prettier --write src/**/*.ts"
   },
   "keywords": [
     "typescript",

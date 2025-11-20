@@ -1,5 +1,5 @@
-import { Toon } from './toon';
-import { ToonFactory } from './factory';
+import { Toon } from '../toon';
+import { ToonFactory } from '../factory';
 
 describe('Operaciones Matriciales - Conversión', () => {
   test('toMatrix() convierte a matriz 2D', () => {

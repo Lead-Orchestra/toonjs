@@ -1,6 +1,6 @@
-import { Toon } from './toon';
-import { ToonFactory } from './factory';
-import { ToonParser } from './parser';
+import { Toon } from '../toon';
+import { ToonFactory } from '../factory';
+import { ToonParser } from '../parser';
 
 describe('ToonParser', () => {
   it('debe parsear formato Toon básico', () => {
