@@ -1,6 +1,6 @@
 {
   "name": "@cescofors/toonjs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "High-performance TypeScript library for tabular data manipulation with 100+ optimized methods. Powered by Float64Array Columnar Architecture. Zero dependencies.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
