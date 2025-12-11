@@ -6,6 +6,8 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist",
+    "build",
+    "assembly",
     "README.md",
     "LICENSE"
   ],

@@ -6,3 +6,7 @@ dist/
 .vscode/
 coverage/
 *.tgz
+# Keep build directory for release artifacts
+!build/release.js
+!build/release.wasm
+!build/release.d.ts
