@@ -73,6 +73,10 @@
   },
   "exports": {
     ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./wasm": {
       "import": "./build/release.js",
       "types": "./build/release.d.ts"
     }
